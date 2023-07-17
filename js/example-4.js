@@ -34,11 +34,17 @@
 // 2. Funcția leaveHoloMessage afișează un mesaj în consolă pentru înregistrarea unei holograme,
 // deoarece destinatarul nu este disponibil. Parametrul name reprezintă numele destinatarului.
 // 3. În apelurile funcției processCall, se transmite numele destinatarului și funcțiile de
-// callback corespunzătoare în funcția processCall. Astfel, în funcție de disponibilitatea destinatarului, va fi apelată funcția de callback potrivită.
-// 4. Se apelează funcția processCall cu numele "Andrei", funcția takeCall ca și callback
-// pentru cazul în care destinatarul este disponibil și funcția activateAnsweringMachine ca și callback pentru cazul în care destinatarul nu este disponibil.
-// Se apelează funcția processCall cu numele "Vasile", funcția takeCall ca și callback
-// pentru cazul în care destinatarul este disponibil și funcția leaveHoloMessage ca și callback pentru cazul în care destinatarul nu este disponibil.
+// callback corespunzătoare în funcția processCall. Astfel, în funcție de disponibilitatea
+// destinatarului, va fi apelată funcția de callback potrivită.
+// 4. Se apelează funcția processCall cu numele "Andrei", funcția takeCall ca și
+//callback
+// pentru cazul în care destinatarul este disponibil și funcția
+//activateAnsweringMachine ca și callback pentru cazul în care destinatarul nu
+//este disponibil.
+// Se apelează funcția processCall cu numele "Vasile", funcția takeCall ca și
+//callback
+// pentru cazul în care destinatarul este disponibil și funcția leaveHoloMessage
+//ca și callback pentru cazul în care destinatarul nu este disponibil.
 
 function processCall(recipient, onAvailable, onNotAvailable) {
   // Simulăm disponibilitatea unui abonat cu un număr aleatoriu
